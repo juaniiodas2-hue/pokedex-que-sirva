@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Pokemon - Juan Esteban Hernandez Hurtado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pokedex</h1>
+        <p class="autor">Autor: Juan Esteban Hernandez Hurtado</p>
+    </header>
+
+    <main>
+        <section class="buscador">
+            <input type="text" id="inputPokemon" placeholder="Nombre o numero del pokemon (ej: pikachu, 25)">
+            <button id="btnBuscar">Buscar</button>
+            <button id="btnAleatorio">Aleatorio</button>
+        </section>
+
+        <section id="mensaje" class="mensaje"></section>
+
+        <section id="tarjetaPokemon" class="tarjeta oculto">
+            <div class="tarjeta-header">
+                <h2 id="pokemonNombre"></h2>
+                <span id="pokemonId"></span>
+            </div>
+
+            <img id="pokemonImagen" src="" alt="Sprite del pokemon">
+
+            <div id="pokemonTipos" class="tipos"></div>
+
+            <div class="datos-basicos">
+                <div>
+                    <span class="etiqueta">Altura</span>
+                    <span id="pokemonAltura"></span>
+                </div>
+                <div>
+                    <span class="etiqueta">Peso</span>
+                    <span id="pokemonPeso"></span>
+                </div>
+                <div>
+                    <span class="etiqueta">Exp. base</span>
+                    <span id="pokemonExperiencia"></span>
+                </div>
+            </div>
+
+            <h3>Habilidades</h3>
+            <ul id="pokemonHabilidades" class="lista-habilidades"></ul>
+
+            <h3>Estadisticas</h3>
+            <div id="pokemonStats" class="stats"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Datos obtenidos desde PokeAPI (pokeapi.co)</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
